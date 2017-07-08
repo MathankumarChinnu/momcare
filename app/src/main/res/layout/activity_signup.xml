@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mash.pregnency.Signup">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Name"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <EditText
+                android:id="@+id/mobno"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="E-Mail"
+                android:inputType="textEmailAddress"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <!--<EditText
+                android:id="@+id/dob"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="DOB (dd-MM-yyyy)"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />-->
+            <LinearLayout
+                android:id="@+id/liner"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    app:srcCompat="@drawable/iconcalender" />
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:hint="DOB"
+                    android:gravity="center_vertical"
+                    android:textAlignment="center"
+                    android:inputType="date"
+                    android:textSize="15dp"
+                    android:textColor="#0a0909"
+                    android:textColorHint="#060606"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/bg"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:entries="@array/bg" />
+
+
+            <EditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Height in cms"
+                android:inputType="number"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="City"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <!--<EditText
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Country"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />-->
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                app:srcCompat="@drawable/ic_chevron_right" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Pregnency Details"
+                android:textSize="10pt" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textAlignment="center"
+                android:textSize="8pt"
+                android:text="Pregnency Attempt" />
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/decrease"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="decreaseInteger"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/attempt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:text="0"
+                    android:textStyle="bold"
+                    android:textSize="40sp" />
+
+                <Button
+                    android:id="@+id/increase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="increaseInteger"
+                    android:text="+" />
+            </LinearLayout>
+
+            <!--<Spinner
+                android:id="@+id/attempt"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:entries="@array/pattempt" />-->
+
+            <!--<TextView
+                android:id="@+id/confirmdate"
+                android:hint="ConfirmDate"
+                android:textSize="19dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />-->
+            <!--<EditText
+                android:id="@+id/confirmdate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="ConfirmDate"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />-->
+            <LinearLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/iconcalender" />
+
+                <TextView
+                    android:id="@+id/confirmdate"
+                    android:layout_width="250dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:gravity="center_vertical"
+                    android:hint="Last Menstrual Period"
+                    android:inputType="date"
+                    android:textAlignment="center"
+                    android:textColor="#0a0909"
+                    android:textColorHint="#060606"
+                    android:textSize="15dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/textcolor"
+                    android:layout_width="180dp"
+                    android:layout_height="31dp"
+                    android:textSize="10pt"
+                    android:text="Color" />
+
+                <Button
+                    android:id="@+id/color"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Color"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <!--<TextView
+                android:id="@+id/pperid"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:hint="Pregnency Peried"
+                android:textAlignment="center"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/ppweeks"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:entries="@array/ppweeks" />
+
+                <Spinner
+                    android:id="@+id/ppdays"
+                    android:layout_width="130dp"
+                    android:layout_height="45dp"
+                    android:entries="@array/ppdays" />
+
+            </LinearLayout>-->
+
+            <!--<TextView
+                android:id="@+id/notificationtype"
+                android:hint="NotificationType"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <CheckBox
+                    android:id="@+id/ch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:hint="Daily"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/ch2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:hint="Weekly"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+                <CheckBox
+                    android:id="@+id/ch3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:hint="Mounthly"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|start"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/ic_chevron_left" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/floatingActionButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|end"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/ic_chevron_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+            <TextView
+                android:text="Doctor Details"
+                android:textSize="10pt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+            <EditText
+                android:id="@+id/doctername"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Doctor Name"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <EditText
+                android:id="@+id/dcity"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="City"
+                android:inputType="text"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <EditText
+                android:id="@+id/hospitalno"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Hospital Number"
+                android:inputType="phone"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+            <EditText
+                android:id="@+id/dmob"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/submit1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/regsignup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorAccent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Submit"
+                android:theme="@style/MyButton"
+                android:textAllCaps="false" />
+            <!--<Button
+                android:id="@+id/regread"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Read"
+                android:textAllCaps="false" />-->
+            </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

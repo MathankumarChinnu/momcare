@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mash.pregnency.Checkup"
+    tools:showIn="@layout/app_bar_checkup">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true">
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+        <!--<EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:hint="Date"
+            android:inputType="date"
+            android:textColor="#0a0909"
+            android:textColorHint="#060606" />-->
+        <LinearLayout
+            android:id="@+id/liner"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_marginTop="15dp"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/iconcalender" />
+            <TextView
+                android:id="@+id/date"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="Date"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:inputType="date"
+                android:textSize="15dp"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606"
+                android:layout_width="250dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:hint="Weight in Kgs"
+            android:inputType="text"
+            android:textColor="#0a0909"
+            android:textColorHint="#060606" />
+        <!--<EditText
+            android:id="@+id/bp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:hint="BloodPresure"
+            android:inputType="text"
+            android:textColor="#0a0909"
+            android:textColorHint="#060606" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Spinner
+                android:id="@+id/maxbp"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:entries="@array/maxbp" />
+
+            <Spinner
+                android:id="@+id/minbp"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:entries="@array/minbp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/bellysize"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:hint="BellySize in Cms"
+            android:inputType="text"
+            android:textColor="#0a0909"
+            android:textColorHint="#060606" />
+        <!--<EditText
+            android:id="@+id/nextcheckdate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:hint="NextCheckDate"
+            android:inputType="date"
+            android:textColor="#0a0909"
+            android:textColorHint="#060606" />-->
+        <LinearLayout
+            android:id="@+id/liner1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_marginTop="15dp"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                app:srcCompat="@drawable/iconcalender" />
+            <TextView
+                android:id="@+id/nextcheckdate"
+                android:layout_marginTop="15dp"
+                android:fontFamily="serif"
+                android:hint="NextCheckDate"
+                android:gravity="center_vertical"
+                android:textAlignment="center"
+                android:inputType="date"
+                android:textSize="15dp"
+                android:textColor="#0a0909"
+                android:textColorHint="#060606"
+                android:layout_width="250dp"
+                android:layout_height="45dp" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/remarks"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="serif"
+            android:hint="Remarks"
+            android:inputType="textMultiLine"
+            android:singleLine="false"
+            android:textColor="#0a0909"
+            android:textColorHint="#060606" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/checkup_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="SUBMIT"
+                android:textAllCaps="false" />
+
+            <!--<Button
+                android:id="@+id/checkupread"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="serif"
+                android:text="Read"
+                android:textAllCaps="false" />-->
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

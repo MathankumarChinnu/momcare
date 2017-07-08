@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<pragnancyprofile>
+    <profile1>
+        <name>kumar</name>
+        <mobno>8676867601</mobno>
+        <email>abckumar@gmail.com</email>
+        <dob>15-06-1994</dob>
+        <bg>O+</bg>
+        <height>150cm</height>
+        <city>coimbatore</city>
+        <country>india</country>
+
+
+    </profile1>
+    <profile2>
+        <name>msthan</name>
+        <mobno>8676864523</mobno>
+        <email>mathankumar@gmail.com</email>
+        <dob>15-06-1995</dob>
+        <bg>A+</bg>
+        <height>160cm</height>
+        <city>thiruppur</city>
+        <country>india</country>
+
+
+    </profile2>
+    <profile3>
+        <week>3</week>
+        <days>2</days>
+    </profile3>
+</pragnancyprofile>

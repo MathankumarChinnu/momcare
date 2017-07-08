@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/age_category">
+
+        <item
+            android:id="@+id/nav_home_details"
+            android:icon="@mipmap/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_home_home"
+            android:icon="@mipmap/ic_event"
+            android:title="Calendar View" />
+
+        <item android:title="Checkup">
+         <menu>
+        <item
+            android:id="@+id/nav_home_checkup"
+            android:icon="@mipmap/ic_transfer_checkup"
+            android:title="Entry" />
+        <item
+            android:id="@+id/nav_home_viewhistory"
+            android:icon="@mipmap/ic_pregnant_woman"
+            android:title="View History" />
+         </menu>
+        </item>
+
+    </group>
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_home_profilereg"
+                android:icon="@mipmap/ic_person"
+                android:title="Profile" />
+            <!--<item
+                android:id="@+id/nav_home_pragnancydetails"
+                android:icon="@mipmap/ic_home"
+                android:title="PragnancyDetails" />
+            <item
+                android:id="@+id/nav_home_docterdetails"
+                android:icon="@mipmap/ic_home"
+                android:title="DocterDetails" />-->
+        </menu>
+    </item>
+
+    <group>
+            <item
+                android:id="@+id/nav_home_logout"
+                android:icon="@mipmap/ic_power"
+                android:title="Logout" />
+    </group>
+</menu>

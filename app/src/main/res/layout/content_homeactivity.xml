@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mash.pregnency.Homeactivity"
+    tools:showIn="@layout/app_bar_homeactivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/logo_pragnancy"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10sp"
+                android:textAlignment="center"
+                android:textColor="@color/grey"
+                android:textDirection="firstStrong"
+                android:textSize="18sp"
+                tools:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<ExpandableListView
+                android:id="@+id/lvExp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:divider="@color/darkgreen"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:footerDividersEnabled="true"
+                android:headerDividersEnabled="true" />-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabMode="scrollable"
+                app:tabGravity="fill"/>
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager1"
+                android:layout_below="@+id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

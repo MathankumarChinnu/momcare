@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mash.pregnency.Docterdetails">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/doctername"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:hint="DocterName"
+                    android:inputType="text"
+                    android:textColor="#0a0909"
+                    android:textColorHint="#060606" />
+                <EditText
+                    android:id="@+id/dcity"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:textColor="#0a0909"
+                    android:textColorHint="#060606" />
+                <EditText
+                    android:id="@+id/hospitalno"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:hint="HostpitalNumber"
+                    android:inputType="text"
+                    android:textColor="#0a0909"
+                    android:textColorHint="#060606" />
+                <EditText
+                    android:id="@+id/dmob"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="serif"
+                    android:hint="DocterMobNumber"
+                    android:inputType="text"
+                    android:textColor="#0a0909"
+                    android:textColorHint="#060606" />
+
+                <Button
+                    android:id="@+id/d_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Submit"
+                    android:textAllCaps="false" />
+                <Button
+                    android:id="@+id/d_read"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="serif"
+                    android:text="Read"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

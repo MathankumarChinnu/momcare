@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mash.pregnency">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!--
+    <uses-sdk
+    android:minSdkVersion="11"
+    android:targetSdkVersion="19" />
+    -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_pragnancy"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_pragnancy"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="mash.pregnency.Logo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="mash.pregnency.MainActivity"></activity>
+        <activity android:name="mash.pregnency.Signup" />
+        <activity android:name="mash.pregnency.Pragnencydetails" />
+        <activity android:name="mash.pregnency.Docterdetails" />
+        <activity
+            android:name="mash.pregnency.Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="mash.pregnency.Detailss"
+            android:label="@string/title_activity_detailss"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mash.pregnency.Checkup"
+            android:label="@string/title_activity_checkup"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="mash.pregnency.Viewhistory"
+            android:label="@string/title_activity_viewhistory"
+            android:theme="@style/AppTheme.NoActionBar" >
+
+        </activity>
+        <activity android:name="mash.pregnency.Detaill" />
+        <activity
+            android:name="mash.pregnency.Homeactivity"
+            android:label="@string/title_activity_homeactivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name="mash.pregnency.Profilereg"
+            android:label="@string/title_activity_profilereg"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

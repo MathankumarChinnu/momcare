@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">MomCare</string>
+
+    <string-array name="bg">
+        <item> Blood group </item>
+        <item> A+  </item>
+        <item> A- </item>
+        <item> AB+ </item>
+        <item> AB- </item>
+        <item> B+ </item>
+        <item> B- </item>
+        <item> O+ </item>
+        <item> O- </item>
+    </string-array>
+    <string-array name="pattempt">
+        <item>Pregnency Attempt</item>
+        <item> 1  </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+    </string-array>
+    <string-array name="ppweeks">
+        <item>Weeks</item>
+        <item> 0  </item>
+        <item> 1  </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+    </string-array>
+    <string-array name="ppdays">
+        <item>Days</item>
+        <item> 0  </item>
+        <item> 1  </item>
+        <item> 2 </item>
+        <item> 3 </item>
+        <item> 4 </item>
+        <item> 5 </item>
+        <item> 6  </item>
+        <item> 7  </item>
+    </string-array>
+    <string-array name="weight">
+        <item>Weight</item>
+        <item> MaxBP  </item>
+        <item> MinBP </item>
+        <item> BellySize </item>
+    </string-array>
+    <string-array name="maxbp">
+        <item>Max BP</item>
+        <item> 120  </item>
+        <item> 130 </item>
+        <item> 140 </item>
+        <item> 150 </item>
+        <item> 160 </item>
+        <item> 170 </item>
+        <item> 180 </item>
+        <item> 190 </item>
+        <item> 200 </item>
+        <item> 210 </item>
+        <item> 220 </item>
+        <item> 230 </item>
+    </string-array>
+    <string-array name="minbp">
+        <item>MinBP</item>
+        <item> 20  </item>
+        <item> 30</item>
+        <item> 40 </item>
+        <item> 50 </item>
+        <item> 60 </item>
+        <item> 70 </item>
+        <item> 80 </item>
+        <item> 90 </item>
+        <item> 100 </item>
+    </string-array>
+    <string name="title_activity_home">Home</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_detailss">Detailss</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_checkup">Checkup</string>
+    <string name="title_activity_viewhistory">Viewhistory</string>
+    <string name="title_activity_homeactivity">Homeactivity</string>
+    <string name="title_activity_profilereg">Profilereg</string>
+</resources>
